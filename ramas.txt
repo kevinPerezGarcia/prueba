@@ -1,2 +1,14 @@
 RAMAS EN GIT
-git branch: listar ramas
+git branch                              : listar ramas
+git branch <branch name>                : crear nueva rama llamada <file name>
+  git branch                            : listar ramas
+  git show-branch                       : listar ramas con más detalle
+git checkout <branch name>              : saltar de una rama a otra
+  git checkout -b <branch name>         : crea una nueva rama y salta hacia ella. b- de branch
+git merge <branch name>                 : fusiona una rama a la rama master
+  git merge <branch name> -m "text"     : merge con mensaje incluido. Aplica también para fusionar a una rama secundaria
+git push -u origin experimental         : push hacia origin (nombre del repositorio remoto) la rama experimental. Note el uso de la opcion -u
+git branch -d <branch name>             : en el repositorio local, borrar rama no pusheada o no fusionada
+  git branch -D <branch name>           : en el repositorio local, forzar el borrado de una rama pusheada o fusionada
+git push origin --delete <branch name>  : borrar rama de un repositorio remoto
+git pull                                : jala los cambios del repositorio remoto al local
